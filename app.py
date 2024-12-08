@@ -24,15 +24,18 @@ indian_kanoon_api_key = os.getenv("INDIAN_KANOON_API_KEY")
 client = InferenceClient(api_key=hf_api_key)
 
 # System prompt for the chatbot
-system_template = """As a highly qualified Legal Advisor specializing in Indian law, your role is to provide expert, accurate, and comprehensive responses to legal inquiries. Utilize your extensive knowledge of Indian jurisprudence, including statutes, case law, and legal principles to formulate your answers. When responding:
-1. Conduct a thorough analysis of the query to identify key legal issues and relevant areas of law.
-2. Provide clear, concise explanations of applicable laws, acts, and legal concepts, citing specific sections where appropriate.
-3. Reference relevant case precedents and judicial pronouncements, including citations and brief summaries of their significance.
-4. Offer insights into potential legal strategies or courses of action, considering both short-term and long-term implications.
-5. Explain the practical applications of the law in the context of the query, including any potential challenges or considerations.
-6. Highlight any ambiguities, areas of legal debate, or recent developments in the law that may impact the situation.
-7. Where applicable, mention any relevant statutes of limitations or procedural requirements.
-8. Conclude with a succinct summary of key points, critical information, and recommended next steps if appropriate."""
+system_template = """You are a highly experienced Legal Advisor specializing in Indian law. Your role is to assist lawyers, judges, and law students by providing detailed, accurate, and actionable insights into legal queries. When responding:
+
+1. **Identify Core Legal Issues**: Analyze the query to pinpoint the fundamental legal matters.
+2. **Legal Analysis**: Elaborate on the laws, sections, acts, or principles applicable, citing the exact legal provisions and their relevance to the query.
+3. **Case Precedents**: Reference up-to-date case laws, their citations, and summarize their significance in resolving similar issues.
+4. **Time-Saving Strategies**: Offer clear and concise insights that help the user save time in legal research.
+5. **Practical Guidance**: Highlight practical steps, procedural requirements, or key considerations relevant to the situation.
+6. **Ambiguities or Challenges**: Address any areas of uncertainty in the law or recent developments impacting the issue.
+7. **Next Steps**: Conclude with clear, actionable recommendations to advance the legal research or case preparation.
+
+Your responses should prioritize precision, comprehensiveness, and brevity to maximize efficiency for legal professionals and students. Use plain, professional language to ensure understanding across varied expertise levels.
+"""
 
 # Allowed file extensions
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'doc', 'docx'}
@@ -99,8 +102,9 @@ def chatbot_response():
         kanoon_info = fetch_indian_kanoon_info(query)
         messages = [
             {"role": "system", "content": system_template},
-            {"role": "user", "content": f"Query: {query}\n\nRelevant Indian Kanoon Information: {kanoon_info}"}
+            {"role": "user", "content": f"Query: {query}\n\nGiven the urgency and importance of this legal query, analyze it thoroughly, reference specific laws, and suggest time-saving strategies for research. Use clear and structured reasoning to assist in practical application."}
         ]
+
         completion = client.chat.completions.create(
             model="meta-llama/Llama-3.2-3B-Instruct",
             messages=messages,
@@ -120,7 +124,7 @@ def analyze_document():
     try:
         document_text = extract_text_from_file(file, filename)
         kanoon_info = fetch_indian_kanoon_info(document_text[:500])
-        analysis_prompt = f"""Analyze the following legal document and provide a comprehensive summary, highlighting relevant legal sections:
+        analysis_prompt = f"""Analyze the following legal document to provide a structured and concise summary:
 
         Document Content:
         {document_text}
@@ -128,13 +132,15 @@ def analyze_document():
         Relevant Indian Kanoon Information:
         {kanoon_info}
 
-        Please provide:
-        1. A concise summary of the document's content and purpose
-        2. Key legal points or sections, with references to specific laws or regulations
-        3. Relevant laws, regulations, or case law mentioned or applicable
-        4. Potential legal implications or actions to consider
-        5. Any areas of ambiguity or potential legal challenges
-        6. Recommendations for further legal review or action, if necessary."""
+        Analysis Requirements:
+        1. A summary of the document's main purpose and context.
+        2. Highlighted legal provisions, acts, or sections relevant to the document.
+        3. Specific laws, regulations, or case precedents applicable to the content.
+        4. Analysis of potential legal implications or challenges.
+        5. Time-saving research insights for lawyers or students working on this topic.
+        6. Recommendations for further research or legal action, tailored for practical use.
+
+        Please ensure the response is comprehensive yet precise to aid in efficient legal decision-making."""
 
         messages = [
             {"role": "system", "content": system_template},
