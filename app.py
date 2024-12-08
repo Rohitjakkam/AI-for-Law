@@ -72,16 +72,26 @@ def fetch_indian_kanoon_info(query):
         url = "https://api.indiankanoon.org/search/"
         params = {"formInput": query, "filter": "on", "pagenum": 1}
         headers = {"Authorization": f"Token {indian_kanoon_api_key}"}
-        response = requests.get(url, params=params, headers=headers)
+        response = requests.post(url, params=params, headers=headers)
         if response.status_code == 200:
             data = response.json()
-            relevant_info = [
-                f"Title: {doc.get('title', '')}\nSnippet: {doc.get('snippet', '')}\n"
-                for doc in data.get('docs', [])[:3]
-            ]
-            return "\n".join(relevant_info)
+            detailed_info = []
+            for doc in data.get('docs', [])[:3]:
+                tid = doc.get('tid')
+                title = doc.get('title', '')
+                snippet = doc.get('snippet', '')
+                # Add metadata and fragments if available
+                docmeta_url = f"https://api.indiankanoon.org/docmeta/{tid}/"
+                meta_response = requests.post(docmeta_url, headers=headers)
+                metadata = meta_response.json() if meta_response.status_code == 200 else {}
+                detailed_info.append({
+                    "Title": title,
+                    "Snippet": snippet,
+                    "Metadata": metadata
+                })
+            return detailed_info
         else:
-            return "Unable to fetch information from Indian Kanoon API."
+            return f"Error: {response.status_code} {response.text}"
     except Exception as e:
         return f"Error fetching Indian Kanoon info: {e}"
 
@@ -102,7 +112,7 @@ def chatbot_response():
         kanoon_info = fetch_indian_kanoon_info(query)
         messages = [
             {"role": "system", "content": system_template},
-            {"role": "user", "content": f"Query: {query}\n\nGiven the urgency and importance of this legal query, analyze it thoroughly, reference specific laws, and suggest time-saving strategies for research. Use clear and structured reasoning to assist in practical application."}
+            {"role": "user", "content": f"Query: {query}\n\nAnalyze the following query and provide actionable insights:\n{kanoon_info}"}
         ]
 
         completion = client.chat.completions.create(
@@ -110,7 +120,7 @@ def chatbot_response():
             messages=messages,
             max_tokens=1500
         )
-        response_content = completion.choices[0].message["content"]
+        response_content = completion["choices"][0]["message"]["content"]
         return jsonify({"query": query, "response": response_content})
     except Exception as e:
         return jsonify({"error": f"Error processing query: {e}"}), 500
@@ -124,23 +134,14 @@ def analyze_document():
     try:
         document_text = extract_text_from_file(file, filename)
         kanoon_info = fetch_indian_kanoon_info(document_text[:500])
-        analysis_prompt = f"""Analyze the following legal document to provide a structured and concise summary:
+        analysis_prompt = f"""Analyze the following legal document to provide a structured summary:
 
         Document Content:
         {document_text}
 
         Relevant Indian Kanoon Information:
         {kanoon_info}
-
-        Analysis Requirements:
-        1. A summary of the document's main purpose and context.
-        2. Highlighted legal provisions, acts, or sections relevant to the document.
-        3. Specific laws, regulations, or case precedents applicable to the content.
-        4. Analysis of potential legal implications or challenges.
-        5. Time-saving research insights for lawyers or students working on this topic.
-        6. Recommendations for further research or legal action, tailored for practical use.
-
-        Please ensure the response is comprehensive yet precise to aid in efficient legal decision-making."""
+        """
 
         messages = [
             {"role": "system", "content": system_template},
@@ -151,7 +152,7 @@ def analyze_document():
             messages=messages,
             max_tokens=1500
         )
-        analysis_content = completion.choices[0].message["content"]
+        analysis_content = completion["choices"][0]["message"]["content"]
         return jsonify({"analysis": analysis_content})
     except Exception as e:
         return jsonify({"error": f"Error analyzing document: {e}"}), 500
