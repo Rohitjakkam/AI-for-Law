@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Chatbot</title>
+    <title>LegalChat Interface</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='featurestyles.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo" aria-label="Logo">LegalChat</div>
+        <nav>
+            <ul>
+                <li><a href="/#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Container for Responses -->
     <div class="container">
-        <h1>NyayaSetu</h1>
-        <p>Ask a legal question or upload a document for analysis.</p>
-        
-        <!-- Input for text-based query -->
-        <div class="query-section">
-            <textarea id="query" placeholder="Enter your legal query here..." rows="6"></textarea>
-            <button id="submit-query">Submit Query</button>
-        </div>
-
-        <!-- File upload section -->
-        <div class="file-upload-section">
-            <input type="file" id="file-upload" accept=".txt,.pdf,.doc,.docx">
-            <button id="submit-file">Upload and Analyze Document</button>
-        </div>
-
-        <!-- Display query results -->
+        <!-- Response Section -->
         <div id="response-container">
-            <h2>Response:</h2>
+            <!-- <h2>Response:</h2> -->
             <div id="response"></div>
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <!-- Fixed Input Section -->
+    <div class="input-section">
+        <!-- Upload Button -->
+        <button class="icon-btn" id="upload-btn" title="Upload PDF or Image">
+            &#128194;
+        </button>
+        <input type="file" id="file-upload" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" hidden>
+        
+        <!-- Text Query Section -->
+        <textarea id="query" placeholder="Enter your legal query..." rows="1"></textarea>
+
+        <!-- Submit Button -->
+        <button class="icon-btn" id="submit-query" title="Send">&#9658;</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='feature.js') }}"></script>
 </body>
 </html>
