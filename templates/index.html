@@ -12,11 +12,11 @@
         <div class="logo" aria-label="NITI Logo">NITI</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
+                <!-- <li><a href="#home">Home</a></li> -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" class="btn">Login/Sign Up</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#faq">Our Research</a></li>
+                <li><a href="#carousel-section">Vision</a></li>
             </ul>
         </nav>
     </header>
@@ -24,20 +24,82 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>AI-Driven Research Engine for Commercial Courts</h1>
-            <p>Transforming Legal Research and Dispute Resolution with Advanced AI Solutions</p>
+            <h1>Transform Legal Research with AI-Powered Insights</h1>
+            <p>Experience the future of legal research tailored for Commercial Courts.</p>
             <div class="cta-buttons">
                 <a href="/ai-help" class="btn primary" aria-label="Try the AI Help feature">Try Now</a>
-                <a href="#contact" class="btn secondary" aria-label="Request a demonstration of the AI solution">Request a Demo</a>
+                <a href="#watch-video" class="btn secondary" aria-label="Request a demonstration of the AI solution">Watch Video</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>Empowering Faster Resolution of Commercial Disputes</h2>
-        <p>The Commercial Courts Act, 2015, was enacted to foster ease of doing business in India. Our AI-powered solution addresses the challenges of legal research, predictive analytics, and document processing to expedite dispute resolution.</p>
+        <h2>About the AI-Driven Research Engine</h2>
+        <p>Our AI-Driven Research Engine is designed to revolutionize legal research for Commercial Courts in India. 
+            By leveraging cutting-edge technology, it aggregates, processes, and analyzes vast legal data sources to provide judges and judicial officers with customized insights, key precedents, statutory provisions, and predictive analytics. 
+            This innovation aims to simplify legal processes and expedite the resolution of commercial disputes, fostering a business-friendly environment.
+        </p>
     </section>
+
+
+    <!-- vision section -->
+    <section id="carousel-section" class="carousel-section">
+        <h2>Vision</h2>
+        <div class="carousel-container">
+            <div class="carousel-content">
+                <div class="carousel-item" id="vision">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To empower India's judicial system with state-of-the-art AI tools that streamline legal research, 
+                        enhance decision-making efficiency, and ensure timely resolution of commercial disputes, 
+                        ultimately contributing to ease of doing business in India.
+                    </p>
+                </div>
+                <div class="carousel-item" id="feasibility">
+                    <h3>Feasibility</h3>
+                    <p>
+                        The AI-Driven Research Engine aligns with the unique requirements of India’s judicial system.
+                        <ul>
+                            <li><b>Localized Support:</b>Incorporates diverse High Court laws, local rules, and languages.</li>
+                            <li><b> Design:</b>Designed with feedback from judges and practitioners to meet real-world legal challenges.</li>
+                            <li><b>Ethical Compliance:</b>Operates as a facilitator, ensuring transparency and neutrality in outputs.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="carousel-item" id="viability">
+                    <h3>Viability</h3>
+                    <p>
+                        Our solution is not only feasible but also viable in the long run with constant advancements in AI.
+                        <ul>
+                            <li>Saves time for judges and legal professionals by automating repetitive research tasks.</li>
+                            <li>Improves case outcomes with predictive analytics and historical data trends.</li>
+                            <li>Scalable across jurisdictions with multilingual capabilities and customizable research tools.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="carousel-item" id="technologies">
+                    <h3>Technologies Used</h3>
+                    <p>
+                        Our AI-Driven Research Engine employs the latest advancements in:
+                        <ul>
+                            <li><b>Natural Language Processing (NLP)</b> for extracting and summarizing legal principles.</li>
+                            <li><b>Machine Learning & Predictive Analytics</b> for forecasting case outcomes</li>
+                            <li><b>Big Data Aggregation</b> for compiling and processing extensive legal databases.</li>
+                            <li><b>Multilingual AI Models</b> for supporting diverse languages and regional requirements.</li>
+                            <li><b>Cloud and Edge Computing</b> for scalable and fast deployment.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-button" id="prev-btn">&#8592;</button>
+                <button class="carousel-button" id="next-btn">&#8594;</button>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Features Section -->
     <section id="features" class="features">
@@ -62,6 +124,137 @@
         </div>
     </section>
 
+
+    <!-- video Section -->
+    <section id="watch-video" class="watch-video">
+        <h2>Watch Video</h2>
+        <div class="video-cards">
+            <div class="video-card">
+                <video controls autoplay muted width="340">
+                    <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-card">
+                <video controls autoplay muted width="340">
+                    <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-card">
+                <video controls autoplay muted width="340">
+                    <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2>FAQ Section</h2>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span> How can AI simplify understanding complex legal principles?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                AI can break down dense legal text into simpler summaries, 
+                highlight relevant case laws, and even provide explanations of complex terminologies. 
+                This helps students grasp difficult concepts faster and enables them to focus on deeper learning and analysis.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>What role does predictive analytics play in forecasting legal outcomes?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                Predictive analytics analyzes historical case data and trends to suggest potential outcomes for similar cases. 
+                For students, this can be a valuable learning tool to understand the factors influencing judicial decisions and develop strategic thinking.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>Would you trust AI in your future legal practice?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                Yes, as long as AI remains a facilitator and provides transparent, reliable insights, 
+                I would trust it to assist with research and case preparation. 
+                However, I believe the final judgment should always rest with the human practitioner.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>How can AI assist in reducing time spent on case research?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                AI can automate tedious tasks such as searching for relevant case laws, 
+                extracting key legal principles, and preparing case summaries. 
+                This saves significant time and allows practitioners to focus on crafting arguments and strategies.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>What features do you prioritize in a legal research tool?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                Customization is crucial—I want research tailored to the specific jurisdiction and case requirements. 
+                Additionally, accuracy, ease of use, and multilingual support are essential to ensure relevance and accessibility.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>How does multilingual support impact your work in commercial disputes?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                Multilingual support ensures I can access legal resources in local languages, 
+                which is invaluable when dealing with diverse clients and jurisdictions. 
+                It fosters inclusivity and ensures no critical detail is lost in translation.  
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>How can AI streamline judicial workflows in commercial suits?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                AI can assist by quickly providing summaries of relevant case laws, 
+                identifying precedents, and organizing legal arguments. 
+                This reduces the time spent on research and allows me to focus more on the merits of the case.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span>Would customized research outputs improve the efficiency of court proceedings?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                Absolutely. Tailored outputs aligned with the specific needs of each case ensure that I have the most pertinent information at my fingertips, enabling faster and more informed decision-making.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                <span> How do you perceive the ethical role of AI in the judiciary?</span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div class="answer">
+                AI should function as a neutral facilitator—providing accurate, 
+                unbiased information while respecting judicial independence. 
+                It must remain transparent in its operations, ensuring fairness and avoiding any influence on judicial discretion. 
+            </div>
+        </div>
+    </section>
+    
+    
+
     <!-- Call to Action -->
     <section class="cta">
         <h2>Ready to Revolutionize Legal Research?</h2>
@@ -80,5 +273,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../static/script.js"></script>
 </body>
 </html>
