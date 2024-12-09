@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Driven Research Engine for Commercial Courts</title>
+    <link id='favicon' rel="shortcut icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-png">
+    <title>Kanoon Setu</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo" aria-label="NITI Logo">NITI</div>
+        <div class="logo" aria-label="KANOON SETU Logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="" class="logo-image" />
+        </div>
         <nav>
             <ul>
                 <!-- <li><a href="#home">Home</a></li> -->
@@ -155,7 +159,7 @@
 
     <!-- FAQ Section -->
     <section id="faq" class="faq-section">
-        <h2>FAQ Section</h2>
+        <h2>Our Research</h2>
         <div class="faq-item">
             <div class="question" onclick="toggleAnswer(this)">
                 <span> How can AI simplify understanding complex legal principles?</span>
@@ -258,21 +262,41 @@
     <!-- Call to Action -->
     <section class="cta">
         <h2>Ready to Revolutionize Legal Research?</h2>
-        <a href="#home" class="btn primary" aria-label="Get started with the AI solution">Get Started Now</a>
-        <a href="#about" class="btn secondary" aria-label="Learn more about the AI-driven research engine">Learn More</a>
+        <a href="/ai-help" class="btn primary" aria-label="Get started with the AI solution">Get Started Now</a>
+        <!-- <a href="#home" class="btn secondary" aria-label="Learn more about the AI-driven research engine">Learn More</a> -->
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 AI-Driven Research Engine for Commercial Courts. All Rights Reserved.</p>
-            <ul class="social-links">
+            <!-- <ul class="social-links">
                 <li><a href="#" aria-label="Visit our LinkedIn page">LinkedIn</a></li>
                 <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
                 <li><a href="#" aria-label="Visit our Facebook page">Facebook</a></li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
+
+
+    <!-- Sticky Chat Button -->
+    <button id="chat-button" aria-label="Open chatbot">
+        <span class="material-symbols-outlined">chat</span>
+    </button>
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal" class="chatbot-modal">
+        <div class="chatbot-content">
+            <iframe
+                src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/29/08/20241129082721-MTC9MDBB.json"
+                frameborder="0"
+                title="Chat with us"
+                aria-label="Chat with us"
+                id="chatbot-iframe"
+            ></iframe>
+            <button id="close-chatbot" aria-label="Close chatbot">&times;</button>
+        </div>
+    </div>
+
     <script src="../static/script.js"></script>
 </body>
 </html>

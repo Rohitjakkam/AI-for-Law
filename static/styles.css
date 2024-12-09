@@ -13,19 +13,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #2c3e50;
+    padding: 3px;
+    background: #b99671;
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 40px;
 }
 
-header .logo {
+/* header .logo {
     font-size: 1.5rem;
     font-weight: bold;
+} */
+
+header .logo img {
+    height: 50px;
+    width: 50px; 
+    margin-right: 2px; 
+    background: transparent;
 }
 
 header nav ul {
@@ -36,19 +44,19 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 3px 10px;
+    margin: 0px 10px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 3px 14px;
+    padding: 4px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #3498db; 
+    background-color: black;
 }
 
 
@@ -59,6 +67,10 @@ header nav ul li a:hover {
     padding: 100px 20px;
     background: linear-gradient(to bottom right, #3498db, #2c3e50);
     color: #fff;
+    background: url('background.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    height: 70vh;
 }    
 
 .hero h1 {
@@ -79,13 +91,31 @@ header nav ul li a:hover {
 }
 
 .hero .cta-buttons .primary {
-    background: #f39c12;
+    background: black;
     color: #fff;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.hero .cta-buttons .primary:hover {
+    background: #b99671;
+    color: black;
+    font-size: 1rem;
+    font-weight: 550;
 }
 
 .hero .cta-buttons .secondary {
-    background: #fff;
-    color: #3498db;
+    background: black;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.hero .cta-buttons .secondary:hover {
+    background: #b99671;
+    color: black;
+    font-size: 1rem;
+    font-weight: 550;
 }
 
 
@@ -97,7 +127,9 @@ header nav ul li a:hover {
 }
 
 .about h2 {
-    color:#3498db;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .about p {
@@ -114,9 +146,9 @@ header nav ul li a:hover {
 }
 
 .carousel-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 40px;
-    color: #3498db;
+    color: black;
     text-align: center;
     font-weight: bold;
 }
@@ -155,7 +187,7 @@ header nav ul li a:hover {
 
 .carousel-item h3 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #b99671;
     margin-bottom: 15px;
     font-weight: bold;
 }
@@ -263,7 +295,9 @@ header nav ul li a:hover {
 }
 
 .features h2 {
-    color:#3498db;
+    color:black;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .features .feature-cards {
@@ -280,6 +314,7 @@ header nav ul li a:hover {
 }
 
 .features .feature-card h3 {
+    color:#b99671;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
@@ -296,7 +331,7 @@ header nav ul li a:hover {
 .watch-video h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color:#3498db;
+    color:black;
 }
 
 .video-cards {
@@ -333,7 +368,7 @@ header nav ul li a:hover {
 .faq-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color:#3498db;
+    color:black;
     text-align: center;
 }
 
@@ -354,8 +389,8 @@ header nav ul li a:hover {
 }
 
 .question:hover {
-    background: #3498db;
-    color: white;
+    background: #b99671;
+    color: black;
 }
 
 .answer {
@@ -376,12 +411,13 @@ header nav ul li a:hover {
 /* CTA Section */
 .cta {
     padding: 40px 20px;
-    background-color: #3498db;
+    background-color: #b99671;
     color: white;
     text-align: center;
 }
 
 .cta h2 {
+    color: white;
     font-size: 2rem;
     margin-bottom: 30px;
 }
@@ -391,9 +427,14 @@ header nav ul li a:hover {
     font-size: 1rem;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
-    background-color: #f39c12;
+    color: black;
+    background-color: white;
     margin: 0 10px;
+}
+
+.cta .btn:hover {
+    background-color: black;
+    color: white;
 }
 
 .cta .btn.secondary {
@@ -401,12 +442,17 @@ header nav ul li a:hover {
     color: #3498db;
 }
 
+.cta .btn.secondary:hover {
+    background-color: black;
+    color: #b99671;
+}
+
 
 
 /* Footer Section */
 footer {
     padding: 10px;
-    background: #2c3e50;
+    background: #000000;
     color: #fff;
 }
 
@@ -433,4 +479,68 @@ footer .social-links a {
 
 footer .social-links a:hover {
     text-decoration: underline;
+}
+
+
+
+/* Sticky Chat Button */
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #86e0e7;
+    /* color: white; */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+}
+
+/* Chatbot Modal */
+.chatbot-modal {
+    display: none; 
+    position: fixed;
+    bottom: 80px; 
+    right: 20px; 
+    width: 320px;
+    height: 600px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px black;
+    z-index: 1000; 
+}
+
+/* Chatbot Iframe */
+#chatbot-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Close Button */
+#close-chatbot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; 
+}
+
+
+/* chat icon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
