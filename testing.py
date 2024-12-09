@@ -1,13 +1,14 @@
+import os
+import json
+import requests
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from dotenv import load_dotenv
-import os
-import requests
-from werkzeug.utils import secure_filename
+from huggingface_hub import InferenceClient
+import tempfile
 import PyPDF2
 import docx
-import tempfile
-from huggingface_hub import InferenceClient
+from werkzeug.utils import secure_filename
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -23,6 +24,13 @@ indian_kanoon_api_key = os.getenv("INDIAN_KANOON_API_KEY")
 # Initialize Hugging Face Inference Client
 client = InferenceClient(api_key=hf_api_key)
 
+# Directory to save response files
+output_directory = os.path.abspath("output_files")
+os.makedirs(output_directory, exist_ok=True)
+
+# Allowed file extensions
+ALLOWED_EXTENSIONS = {"pdf", "doc", "docx", "txt"}
+
 # System prompt for the chatbot
 system_template = """As a highly qualified Legal Advisor specializing in Indian law, your role is to provide expert, accurate, and comprehensive responses to legal inquiries. Utilize your extensive knowledge of Indian jurisprudence, including statutes, case law, and legal principles to formulate your answers. When responding:
 1. Conduct a thorough analysis of the query to identify key legal issues and relevant areas of law.
@@ -33,9 +41,6 @@ system_template = """As a highly qualified Legal Advisor specializing in Indian 
 6. Highlight any ambiguities, areas of legal debate, or recent developments in the law that may impact the situation.
 7. Where applicable, mention any relevant statutes of limitations or procedural requirements.
 8. Conclude with a succinct summary of key points, critical information, and recommended next steps if appropriate."""
-
-# Allowed file extensions
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'doc', 'docx'}
 
 # Helper function to check allowed file extensions
 def allowed_file(filename):
@@ -69,7 +74,7 @@ def fetch_indian_kanoon_info(query):
         url = "https://api.indiankanoon.org/search/"
         params = {"formInput": query, "filter": "on", "pagenum": 1}
         headers = {"Authorization": f"Token {indian_kanoon_api_key}"}
-        response = requests.get(url, params=params, headers=headers)
+        response = requests.post(url, params=params, headers=headers)
         if response.status_code == 200:
             data = response.json()
             relevant_info = [
@@ -82,9 +87,46 @@ def fetch_indian_kanoon_info(query):
     except Exception as e:
         return f"Error fetching Indian Kanoon info: {e}"
 
+# Helper function to fetch the top document's context
+def fetch_indian_kanoon_context(query):
+    try:
+        search_url = "https://api.indiankanoon.org/search/"
+        search_params = {"formInput": query, "filter": "on", "pagenum": 1}
+        headers = {"Authorization": f"Token {indian_kanoon_api_key}"}
+
+        search_response = requests.post(search_url, params=search_params, headers=headers)
+        search_response.raise_for_status()
+        search_data = search_response.json()
+
+        # Save search_response.json
+        search_file_path = os.path.join(output_directory, "search_response.json")
+        with open(search_file_path, "w") as file:
+            json.dump(search_data, file, indent=4)
+
+        # Get the first document's ID (tid)
+        docs = search_data.get("docs", [])
+        if not docs:
+            return "No relevant documents found in Indian Kanoon."
+        docid = docs[0].get("tid")
+
+        # Fetch the document context
+        context_url = f"https://api.indiankanoon.org/doc/{docid}/"
+        context_response = requests.post(context_url, headers=headers)
+        context_response.raise_for_status()
+        context_data = context_response.json()
+
+        # Save response_context.json
+        context_file_path = os.path.join(output_directory, "response_context.json")
+        with open(context_file_path, "w") as file:
+            json.dump(context_data, file, indent=4)
+
+        return context_data.get("content", "No content found in the document context.")
+    except Exception as e:
+        return f"Error fetching Indian Kanoon context: {e}"
+
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
 @app.route("/ai-help")
 def ai_help():
@@ -95,11 +137,12 @@ def chatbot_response():
     query = request.json.get("query", "")
     if not query:
         return jsonify({"error": "Query is required"}), 400
+
     try:
-        kanoon_info = fetch_indian_kanoon_info(query)
+        kanoon_context = fetch_indian_kanoon_context(query)
         messages = [
             {"role": "system", "content": system_template},
-            {"role": "user", "content": f"Query: {query}\n\nRelevant Indian Kanoon Information: {kanoon_info}"}
+            {"role": "user", "content": f"Query: {query}\n\nIndian Kanoon Context: {kanoon_context}"}
         ]
         completion = client.chat.completions.create(
             model="meta-llama/Llama-3.2-3B-Instruct",
@@ -120,10 +163,12 @@ def analyze_document():
     try:
         document_text = extract_text_from_file(file, filename)
         kanoon_info = fetch_indian_kanoon_info(document_text[:500])
+
+        # Ensure the input is within token limits
         analysis_prompt = f"""Analyze the following legal document and provide a comprehensive summary, highlighting relevant legal sections:
 
         Document Content:
-        {document_text}
+        {document_text[:2000]}  # Truncate content if necessary to fit token limit
 
         Relevant Indian Kanoon Information:
         {kanoon_info}
@@ -140,15 +185,22 @@ def analyze_document():
             {"role": "system", "content": system_template},
             {"role": "user", "content": analysis_prompt}
         ]
+
+        # Adjust max_tokens to fit within limit
+        max_allowed_tokens = 4096 - len(analysis_prompt.split())
+        max_new_tokens = min(1500, max_allowed_tokens)
+
         completion = client.chat.completions.create(
             model="meta-llama/Llama-3.2-3B-Instruct",
             messages=messages,
-            max_tokens=1500
+            max_tokens=max_new_tokens
         )
+
         analysis_content = completion.choices[0].message["content"]
         return jsonify({"analysis": analysis_content})
     except Exception as e:
         return jsonify({"error": f"Error analyzing document: {e}"}), 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
