@@ -63,32 +63,57 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Back to top button functionality
-const backToTopBtn = document.createElement('button');
-backToTopBtn.textContent = '↑';
-backToTopBtn.style.position = 'fixed';
-backToTopBtn.style.bottom = '20px';
-backToTopBtn.style.right = '20px';
-backToTopBtn.style.padding = '10px';
-backToTopBtn.style.backgroundColor = '#3498db';
-backToTopBtn.style.color = '#fff';
-backToTopBtn.style.border = 'none';
-backToTopBtn.style.borderRadius = '50%';
-backToTopBtn.style.cursor = 'pointer';
-backToTopBtn.style.display = 'none';
-document.body.appendChild(backToTopBtn);
+// // Back to top button functionality
+// const backToTopBtn = document.createElement('button');
+// backToTopBtn.textContent = '↑';
+// backToTopBtn.style.position = 'fixed';
+// backToTopBtn.style.bottom = '20px';
+// backToTopBtn.style.right = '20px';
+// backToTopBtn.style.padding = '10px';
+// backToTopBtn.style.backgroundColor = '#3498db';
+// backToTopBtn.style.color = '#fff';
+// backToTopBtn.style.border = 'none';
+// backToTopBtn.style.borderRadius = '50%';
+// backToTopBtn.style.cursor = 'pointer';
+// backToTopBtn.style.display = 'none';
+// document.body.appendChild(backToTopBtn);
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-        backToTopBtn.style.display = 'block';
-    } else {
-        backToTopBtn.style.display = 'none';
-    }
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 200) {
+//         backToTopBtn.style.display = 'block';
+//     } else {
+//         backToTopBtn.style.display = 'none';
+//     }
+// });
+
+// backToTopBtn.addEventListener('click', () => {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth',
+//     });
+// });
+
+
+
+// botpress script:-
+// Get the elements
+const chatButton = document.getElementById('chat-button');
+const chatbotModal = document.getElementById('chatbot-modal');
+const closeChatbot = document.getElementById('close-chatbot');
+
+// Open the chatbot modal
+chatButton.addEventListener('click', () => {
+    chatbotModal.style.display = 'flex'; // Show the modal
 });
 
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
+// Close the chatbot modal
+closeChatbot.addEventListener('click', () => {
+    chatbotModal.style.display = 'none'; // Hide the modal
+});
+
+// Close modal when clicking outside of the content
+chatbotModal.addEventListener('click', (event) => {
+    if (event.target === chatbotModal) {
+        chatbotModal.style.display = 'none';
+    }
 });
