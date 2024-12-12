@@ -1,0 +1,529 @@
+{
+    "categories": [
+        [
+            "Filter by AI Tags",
+            [
+                {
+                    "value": "arbitration",
+                    "formInput": "Section%203%20for%20arbitration+tag:arbitration"
+                },
+                {
+                    "value": "legal-stay",
+                    "formInput": "Section%203%20for%20arbitration+tag:legal-stay"
+                },
+                {
+                    "value": "arbitration-and-conciliation",
+                    "formInput": "Section%203%20for%20arbitration+tag:arbitration-and-conciliation"
+                },
+                {
+                    "value": "application-for-setting-aside-arbitral-award",
+                    "formInput": "Section%203%20for%20arbitration+tag:application-for-setting-aside-arbitral-award"
+                },
+                {
+                    "value": "limitation",
+                    "formInput": "Section%203%20for%20arbitration+tag:limitation"
+                },
+                {
+                    "value": "extension-of-prescribed-period",
+                    "formInput": "Section%203%20for%20arbitration+tag:extension-of-prescribed-period"
+                },
+                {
+                    "value": "meaning-of-service-by-post",
+                    "formInput": "Section%203%20for%20arbitration+tag:meaning-of-service-by-post"
+                },
+                {
+                    "value": "limitations",
+                    "formInput": "Section%203%20for%20arbitration+tag:limitations"
+                },
+                {
+                    "value": "arbitration-agreement",
+                    "formInput": "Section%203%20for%20arbitration+tag:arbitration-agreement"
+                },
+                {
+                    "value": "judgment-according-to-the-award",
+                    "formInput": "Section%203%20for%20arbitration+tag:judgment-according-to-the-award"
+                }
+            ]
+        ],
+        [
+            "Related Queries",
+            [
+                {
+                    "value": "section 34 of the arbitration act",
+                    "formInput": "section%2034%20of%20the%20arbitration%20act"
+                },
+                {
+                    "value": "arbitral award",
+                    "formInput": "arbitral%20award"
+                },
+                {
+                    "value": "section 3 arbitration act  ",
+                    "formInput": "section%203%20arbitration%20act%20%20"
+                },
+                {
+                    "value": "section 34(3) arbitration",
+                    "formInput": "section%2034%283%29%20arbitration"
+                },
+                {
+                    "value": "section 34(3) of the arbitration act",
+                    "formInput": "section%2034%283%29%20of%20the%20arbitration%20act"
+                },
+                {
+                    "value": "arbitration and conciliation act, 1996",
+                    "formInput": "arbitration%20and%20conciliation%20act%2C%201996"
+                },
+                {
+                    "value": "arbitration, section 34",
+                    "formInput": "arbitration%2C%20section%2034"
+                },
+                {
+                    "value": "arbitral tribunal ",
+                    "formInput": "arbitral%20tribunal%20"
+                },
+                {
+                    "value": "arbitration act",
+                    "formInput": "arbitration%20act"
+                },
+                {
+                    "value": "appointment of arbitrator/",
+                    "formInput": "appointment%20of%20arbitrator/"
+                }
+            ]
+        ],
+        [
+            "Document Types",
+            [
+                {
+                    "value": "All",
+                    "formInput": "Section%203%20for%20arbitration",
+                    "selected": true
+                },
+                {
+                    "value": "Laws",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:laws"
+                },
+                {
+                    "value": "Judgments",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:judgments"
+                },
+                {
+                    "value": "Tribunals",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:tribunals"
+                },
+                {
+                    "value": "Highcourts & Supremecourt",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:supremecourt,scorders,highcourts"
+                }
+            ]
+        ],
+        [
+            "Courts and Laws",
+            [
+                {
+                    "value": "Supreme Court of India",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:supremecourt",
+                    "selected": false
+                },
+                {
+                    "value": "Delhi District Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:delhidc",
+                    "selected": false
+                },
+                {
+                    "value": "Delhi High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:delhi",
+                    "selected": false
+                },
+                {
+                    "value": "Bombay High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:bombay",
+                    "selected": false
+                },
+                {
+                    "value": "Madras High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:chennai",
+                    "selected": false
+                },
+                {
+                    "value": "Union of India - Section",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:union-section",
+                    "selected": false
+                },
+                {
+                    "value": "Calcutta High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:kolkata",
+                    "selected": false
+                },
+                {
+                    "value": "Chattisgarh High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:chattisgarh",
+                    "selected": false
+                },
+                {
+                    "value": "Gujarat High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:gujarat",
+                    "selected": false
+                },
+                {
+                    "value": "Allahabad High Court",
+                    "formInput": "Section%203%20for%20arbitration+doctypes:allahabad",
+                    "selected": false
+                }
+            ]
+        ],
+        [
+            "Authors",
+            [
+                {
+                    "value": "Ramesh Deokinandan Dhanuka",
+                    "formInput": "Section%203%20for%20arbitration+authorid:r-d-dhanuka"
+                },
+                {
+                    "value": "Arup Kumar Goswami",
+                    "formInput": "Section%203%20for%20arbitration+authorid:a-k-goswami"
+                },
+                {
+                    "value": "R I Chagla",
+                    "formInput": "Section%203%20for%20arbitration+authorid:r-i-chagla"
+                },
+                {
+                    "value": "Rohinton Fali Nariman",
+                    "formInput": "Section%203%20for%20arbitration+authorid:r-f-nariman"
+                },
+                {
+                    "value": "Abdul Quddhose",
+                    "formInput": "Section%203%20for%20arbitration+authorid:a-quddhose"
+                }
+            ]
+        ],
+        [
+            "Bench",
+            [
+                {
+                    "value": "Ramesh Deokinandan Dhanuka",
+                    "formInput": "Section%203%20for%20arbitration+benchid:r-d-dhanuka"
+                },
+                {
+                    "value": "Nuthalapati Venkata Ramana",
+                    "formInput": "Section%203%20for%20arbitration+benchid:n-v-ramana"
+                },
+                {
+                    "value": "Krishna Murari",
+                    "formInput": "Section%203%20for%20arbitration+benchid:k-murari"
+                },
+                {
+                    "value": "Arup Kumar Goswami",
+                    "formInput": "Section%203%20for%20arbitration+benchid:a-k-goswami"
+                },
+                {
+                    "value": "R I Chagla",
+                    "formInput": "Section%203%20for%20arbitration+benchid:r-i-chagla"
+                },
+                {
+                    "value": "Uday Umesh Lalit",
+                    "formInput": "Section%203%20for%20arbitration+benchid:u-u-lalit"
+                },
+                {
+                    "value": "Rohinton Fali Nariman",
+                    "formInput": "Section%203%20for%20arbitration+benchid:r-f-nariman"
+                },
+                {
+                    "value": "Abdul Quddhose",
+                    "formInput": "Section%203%20for%20arbitration+benchid:a-quddhose"
+                },
+                {
+                    "value": "Syed Abdul Nazeer",
+                    "formInput": "Section%203%20for%20arbitration+benchid:s-a-nazeer"
+                },
+                {
+                    "value": "Jitendra Kumar Maheshwari",
+                    "formInput": "Section%203%20for%20arbitration+benchid:j-k-maheshwari"
+                }
+            ]
+        ],
+        [
+            "Years",
+            [
+                {
+                    "value": 2023,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2023+todate:31-12-2023"
+                },
+                {
+                    "value": 2019,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2019+todate:31-12-2019"
+                },
+                {
+                    "value": 2020,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2020+todate:31-12-2020"
+                },
+                {
+                    "value": 2018,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2018+todate:31-12-2018"
+                },
+                {
+                    "value": 2024,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2024+todate:31-12-2024"
+                },
+                {
+                    "value": 2021,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2021+todate:31-12-2021"
+                },
+                {
+                    "value": 1800,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-1800+todate:31-12-1800"
+                },
+                {
+                    "value": 2016,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2016+todate:31-12-2016"
+                },
+                {
+                    "value": 2022,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2022+todate:31-12-2022"
+                },
+                {
+                    "value": 1996,
+                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-1996+todate:31-12-1996"
+                }
+            ]
+        ]
+    ],
+    "docs": [
+        {
+            "tid": 55662,
+            "catids": [
+                152,
+                135
+            ],
+            "doctype": 1017,
+            "publishdate": "1976-08-16",
+            "authorid": null,
+            "bench": null,
+            "title": "European Grain And Shipping, A Company vs Morvi Vegetable Products Ltd. on 16 August, 1976",
+            "numcites": 37,
+            "numcitedby": 0,
+            "headline": "relevant <b>Section</b> viz.  <b>Sections</b> 2  and  <b>3</b> . The Supreme Court also referred to the  <b>Arbitration</b> (Protocol and Convention) Act, 1937 , the <b>Arbitration</b> Clauses (Protocol ... clearly expressed in <b>sec</b> <b>3</b>, the majority Court quoted with approval a decision of Calcutta High Court under  <b>Section</b> <b>3</b>",
+            "docsize": 68451,
+            "fragment": true,
+            "docsource": "Gujarat High Court",
+            "citation": "(1979)1GLR159"
+        },
+        {
+            "tid": 158645836,
+            "catids": [
+                135,
+                377,
+                39
+            ],
+            "doctype": 1004,
+            "publishdate": "2016-08-02",
+            "authorid": 474,
+            "bench": [
+                474
+            ],
+            "title": "Logic Eastern India Pvt Ltd vs Kec International Ltd(Cables Sbu) on 2 August, 2016",
+            "numcites": 13,
+            "numcitedby": 0,
+            "headline": "terms of  <b>Section</b> 31(5)  of the <b>Arbitration</b> Act upon the petitioner, the\n    limitation for filing the <b>arbitration</b> petition under  <b>Section</b> 34(<b>3</b> ... also  <b>Section</b> 27  of the General Clauses Act,\n                                  \n    1897 and has held that  <b>Section</b> <b>3</b>(1)(b)  of the <b>Arbitration</b> Act makes it\n    clear that",
+            "docsize": 47705,
+            "fragment": true,
+            "docsource": "Bombay High Court",
+            "author": "R D Dhanuka",
+            "authorEncoded": "r-d-dhanuka"
+        },
+        {
+            "tid": 69084860,
+            "catids": null,
+            "doctype": 1004,
+            "publishdate": "2024-04-01",
+            "authorid": 469,
+            "bench": [
+                469
+            ],
+            "title": "Health Care Medical And General Stores vs Amulya Investment on 1 April, 2024",
+            "numcites": 10,
+            "numcitedby": 0,
+            "headline": "<b>Arbitration</b>\n\nAgreement as provided in  <b>Section</b> 2(1)(h)  of the <b>Arbitration</b> Act.\n\nThis Court has also referred to  <b>Section</b> <b>3</b>  of the <b>Arbitration</b> ... making application under Sub-<b>Section</b> (<b>3</b>) of  <b>Section</b> 34  which is to\n\n be read with  <b>Section</b> 31(5)  of the <b>Arbitration</b> Act.                The Supreme\n\n Court",
+            "docsize": 38793,
+            "fragment": true,
+            "docsource": "Bombay High Court",
+            "author": "R I Chagla",
+            "authorEncoded": "r-i-chagla"
+        },
+        {
+            "tid": 1293440,
+            "catids": [
+                152,
+                55,
+                135,
+                531
+            ],
+            "doctype": 1000,
+            "publishdate": "2004-04-05",
+            "authorid": 1882,
+            "bench": [
+                2113,
+                1882
+            ],
+            "title": "Milkfood Ltd vs M/S Gmc Ice Cream (P) Ltd on 5 April, 2004",
+            "numcites": 53,
+            "numcitedby": 144,
+            "headline": "laid on Rule <b>3</b> of the First \nSchedule of the 1940 Act in interpreting Sub-<b>Section</b> (<b>3</b>) of \n <b>Section</b> 37  of the Act.  (See  Motilal ... while pointing out the difference between  <b>Section</b> 27(<b>3</b>)  of \nthe 1939 Act and  <b>Section</b> 34(<b>3</b>)  of the 1980 Act on the one \nhand",
+            "docsize": 99661,
+            "fragment": true,
+            "docsource": "Supreme Court of India",
+            "author": "S B Sinha",
+            "authorEncoded": "s-b-sinha",
+            "citation": "AIR 2004 SUPREME COURT 3145"
+        },
+        {
+            "tid": 1924738,
+            "catids": [
+                135,
+                503,
+                152
+            ],
+            "doctype": 1000,
+            "publishdate": "1984-08-16",
+            "authorid": 2158,
+            "bench": [
+                2158,
+                2099
+            ],
+            "title": "Renusagar Power Company Ltd vs General Electric Company And Anr on 16 August, 1984",
+            "numcites": 45,
+            "numcitedby": 183,
+            "headline": "petition  under  <b>section</b>  33  of the Indian <b>Arbitration</b> Act,\n1940 could  be stayed  on a  petition under <b>section</b> <b>3</b> of the\nForeign Awards ... should be refused;\n     (<b>3</b>) The  Court acting  under  <b>section</b>  <b>3</b>  (like the Court\nacting under <b>section</b> 33 of the Indian <b>Arbitration</b> Act) being\na  court",
+            "docsize": 247097,
+            "fragment": true,
+            "docsource": "Supreme Court of India",
+            "author": "V D Tulzapurkar",
+            "authorEncoded": "v-d-tulzapurkar",
+            "citation": "1985 AIR 1156"
+        },
+        {
+            "tid": 60243004,
+            "catids": [
+                327,
+                918
+            ],
+            "doctype": 1000,
+            "publishdate": "2018-12-10",
+            "authorid": 1105,
+            "bench": [
+                1105,
+                1719
+            ],
+            "title": "M/S Emaar Mgf Land Limited vs Aftab Singh on 10 December, 2018",
+            "numcites": 56,
+            "numcitedby": 140,
+            "headline": "<b>arbitration</b>, then, in spite of the non\n\nobstante provision in  <b>Section</b> 5  of the <b>Arbitration</b> Act,\n\nthe law will be saved by  <b>Section</b> 2(<b>3</b> ... purpose of\n       <b>Section</b> 34  of the <b>Arbitration</b> Act, in view of\n      the object of the Act and by operation of\n       <b>Section</b> <b>3</b>  thereof",
+            "docsize": 109041,
+            "fragment": true,
+            "docsource": "Supreme Court of India",
+            "author": "A Bhushan",
+            "authorEncoded": "a-bhushan",
+            "citation": "AIRONLINE 2018 SC 828"
+        },
+        {
+            "tid": 197941333,
+            "catids": [
+                55,
+                39,
+                152,
+                531
+            ],
+            "doctype": 1000,
+            "publishdate": "2021-03-19",
+            "authorid": 1730,
+            "bench": [
+                1126,
+                1737,
+                1730
+            ],
+            "title": "Government Of Maharashtra, (Water ... vs M/S Borse Brothers Engineers And ... on 19 March, 2021",
+            "numcites": 124,
+            "numcitedby": 36,
+            "headline": "period of limitation contemplated under\n\n   <b>section</b> 34(<b>3</b>)  for an appeal filed under  <b>section</b> 37  of the <b>Arbitration</b> Act,\n\n  would amount to judicial legislation ... would show that other <b>sections</b> of the\n\n   Limitation Act  were excluded in the context of  <b>section</b> 34(<b>3</b>)  of the\n\n  <b>Arbitration</b> Act \u2013 such as  <b>sections</b>",
+            "docsize": 171459,
+            "fragment": true,
+            "docsource": "Supreme Court of India",
+            "author": "R F Nariman",
+            "authorEncoded": "r-f-nariman",
+            "citation": "AIRONLINE 2021 SC 152"
+        },
+        {
+            "tid": 78592269,
+            "catids": [
+                49
+            ],
+            "doctype": 1000,
+            "publishdate": "2022-10-31",
+            "authorid": 805,
+            "bench": [
+                1719,
+                702,
+                805
+            ],
+            "title": "Gujarat State Civil Supplies ... vs Mahakali Foods Pvt. Ltd. (Unit 2) on 31 October, 2022",
+            "numcites": 56,
+            "numcitedby": 40,
+            "headline": "<b>Section</b> 7 .\n\n                                          16 \n\f <b>Section</b> 2(4)  reads as under:\n \n         \u201c(4) This Part except sub-<b>section</b> (1) of <b>section</b>\n 40, <b>sections</b> 41 and 43 shall apply ... <b>Section</b> 7  reads as under:\n \n \u201c7. <b>Arbitration</b> agreement. \u2014\n\n   (1) In this Part, \u201c<b>arbitration</b> agreement\u201d means an\n   agreement by the parties to submit to <b>arbitration</b>",
+            "docsize": 121136,
+            "fragment": true,
+            "docsource": "Supreme Court of India",
+            "author": "B M Trivedi",
+            "authorEncoded": "b-m-trivedi"
+        },
+        {
+            "tid": 126925376,
+            "catids": [
+                929,
+                934,
+                926,
+                930,
+                49
+            ],
+            "doctype": 1002,
+            "publishdate": "2017-09-18",
+            "authorid": 728,
+            "bench": [
+                728
+            ],
+            "title": "Bharat Heavy Electricals Limited vs The Micro And Small Enterprises ... on 18 September, 2017",
+            "numcites": 27,
+            "numcitedby": 29,
+            "headline": "referred to <b>arbitration</b> contrary to the\n<b>arbitration</b> agreement entered into between them. He submitted that\n <b>Section</b> 18(<b>3</b>)  of the Act only provided ... between the <b>arbitration</b>\nagreement and  <b>section</b> 18(<b>3</b>)  of the Act;  <b>Section</b> 18(<b>3</b>)  contemplates only\nan institutional <b>arbitration</b> and not an ad hoc <b>arbitration</b>",
+            "docsize": 38855,
+            "fragment": true,
+            "docsource": "Delhi High Court",
+            "author": "V Bakhru",
+            "authorEncoded": "v-bakhru"
+        },
+        {
+            "tid": 1261112,
+            "catids": [
+                39,
+                531
+            ],
+            "doctype": 1004,
+            "publishdate": "2006-04-05",
+            "authorid": 498,
+            "bench": [
+                490,
+                498
+            ],
+            "title": "Chowgule Brothers And Ors. vs Rashtriya Chemicals And Fertilizers ... on 5 April, 2006",
+            "numcites": 27,
+            "numcitedby": 10,
+            "headline": "Rashtriya Chemicals And Fertilizers ... on 5 April, 2006 \n\n Equivalent citations: 2006(<b>3</b>)ARBLR457(BOM), 2006(4)BOMCR78 \n\n Author:  S.J. Vazifdar  \n\n Bench:  S. Radhakrishnan ... Petition under  <b>Section</b> 30  of the <b>Arbitration</b> Act, 1940 setting aside the majority award made by Respondent Nos.2 and <b>3</b>. \n  \n\n 2. Respondent",
+            "docsize": 65547,
+            "fragment": true,
+            "docsource": "Bombay High Court",
+            "author": "S J Vazifdar",
+            "authorEncoded": "s-j-vazifdar",
+            "citation": "2006(3)ARBLR457(BOM)"
+        }
+    ],
+    "found": "11 - 20 of 101563",
+    "encodedformInput": "Section%203%20for%20arbitration"
+}
