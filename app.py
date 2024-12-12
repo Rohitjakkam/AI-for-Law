@@ -150,6 +150,10 @@ def chatbot_response():
             max_tokens=1500
         )
         response_content = completion.choices[0].message["content"]
+        # # Save response_context.json
+        # ai_response_path = os.path.join(output_directory, "ai_response.txt")
+        # with open(ai_response_path, "w") as file:
+        #     json.dump(response_content, file, indent=4)
         return jsonify({"query": query, "response": response_content})
     except Exception as e:
         return jsonify({"error": f"Error processing query: {e}"}), 500
