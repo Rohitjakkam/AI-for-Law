@@ -1,11 +1,18 @@
+// Add loading animation HTML and CSS
+const loadingHTML = `<div class="loading-spinner"></div>`;
+
 // Handle query submission
 document.getElementById('submit-query').addEventListener('click', async function () {
     const query = document.getElementById('query').value.trim();
+    const responseContainer = document.getElementById("response");
 
     if (query === "") {
         alert("Please enter a query.");
         return;
     }
+
+    // Show loading animation
+    responseContainer.innerHTML = loadingHTML;
 
     try {
         const response = await fetch("/chat", {
@@ -19,12 +26,12 @@ document.getElementById('submit-query').addEventListener('click', async function
         const data = await response.json();
         if (response.ok && data.response) {
             const markdownResponse = data.response;
-            document.getElementById("response").innerHTML = marked.parse(markdownResponse);
+            responseContainer.innerHTML = marked.parse(markdownResponse);
         } else {
-            document.getElementById("response").textContent = "Error: " + (data.error || "Unknown error occurred.");
+            responseContainer.textContent = "Error: " + (data.error || "Unknown error occurred.");
         }
     } catch (error) {
-        document.getElementById("response").textContent = "Error: " + error.message;
+        responseContainer.textContent = "Error: " + error.message;
     }
 });
 
@@ -36,11 +43,15 @@ document.getElementById('upload-btn').addEventListener('click', function () {
 // Handle file upload for document analysis
 document.getElementById('file-upload').addEventListener('change', async function () {
     const file = this.files[0];
+    const responseContainer = document.getElementById("response");
 
     if (!file) {
         alert("No file selected. Please choose a file.");
         return;
     }
+
+    // Show loading animation
+    responseContainer.innerHTML = loadingHTML;
 
     const formData = new FormData();
     formData.append("file", file);
@@ -54,11 +65,11 @@ document.getElementById('file-upload').addEventListener('change', async function
         const data = await response.json();
         if (response.ok && data.analysis) {
             const markdownResponse = data.analysis;
-            document.getElementById("response").innerHTML = marked.parse(markdownResponse);
+            responseContainer.innerHTML = marked.parse(markdownResponse);
         } else {
-            document.getElementById("response").textContent = "Error: " + (data.error || "Unknown error occurred.");
+            responseContainer.textContent = "Error: " + (data.error || "Unknown error occurred.");
         }
     } catch (error) {
-        document.getElementById("response").textContent = "Error: " + error.message;
+        responseContainer.textContent = "Error: " + error.message;
     }
 });

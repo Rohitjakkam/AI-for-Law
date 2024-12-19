@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # File paths
-ai_response_file = r"D:\AI-for-Law\output_files\readable_output.txt"
+ai_response_file = r"D:\AI-for-Law\output_files\ai_response.txt"
 cleaned_output_file = r"D:\AI-for-Law\output_files\cleaned_structured_output.txt"
 
 # Load content from files

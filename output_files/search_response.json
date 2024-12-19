@@ -4,44 +4,44 @@
             "Filter by AI Tags",
             [
                 {
-                    "value": "arbitration",
-                    "formInput": "Section%203%20for%20arbitration+tag:arbitration"
-                },
-                {
-                    "value": "legal-stay",
-                    "formInput": "Section%203%20for%20arbitration+tag:legal-stay"
-                },
-                {
-                    "value": "arbitration-and-conciliation",
-                    "formInput": "Section%203%20for%20arbitration+tag:arbitration-and-conciliation"
-                },
-                {
-                    "value": "application-for-setting-aside-arbitral-award",
-                    "formInput": "Section%203%20for%20arbitration+tag:application-for-setting-aside-arbitral-award"
-                },
-                {
                     "value": "limitation",
-                    "formInput": "Section%203%20for%20arbitration+tag:limitation"
+                    "formInput": "Section%20151%20of%20CPC+tag:limitation"
+                },
+                {
+                    "value": "appeal-high-court < writ-petition-high-court",
+                    "formInput": "Section%20151%20of%20CPC+tag:appeal-high-court < writ-petition-high-court"
+                },
+                {
+                    "value": "law-for-hindu-marriages",
+                    "formInput": "Section%20151%20of%20CPC+tag:law-for-hindu-marriages"
+                },
+                {
+                    "value": "court-superintendence",
+                    "formInput": "Section%20151%20of%20CPC+tag:court-superintendence"
+                },
+                {
+                    "value": "equality-before-law",
+                    "formInput": "Section%20151%20of%20CPC+tag:equality-before-law"
+                },
+                {
+                    "value": "discretion-of-court",
+                    "formInput": "Section%20151%20of%20CPC+tag:discretion-of-court"
                 },
                 {
                     "value": "extension-of-prescribed-period",
-                    "formInput": "Section%203%20for%20arbitration+tag:extension-of-prescribed-period"
+                    "formInput": "Section%20151%20of%20CPC+tag:extension-of-prescribed-period"
                 },
                 {
-                    "value": "meaning-of-service-by-post",
-                    "formInput": "Section%203%20for%20arbitration+tag:meaning-of-service-by-post"
+                    "value": "divorce",
+                    "formInput": "Section%20151%20of%20CPC+tag:divorce"
                 },
                 {
-                    "value": "limitations",
-                    "formInput": "Section%203%20for%20arbitration+tag:limitations"
+                    "value": "maintenance-and-expenses-of-proceedings",
+                    "formInput": "Section%20151%20of%20CPC+tag:maintenance-and-expenses-of-proceedings"
                 },
                 {
-                    "value": "arbitration-agreement",
-                    "formInput": "Section%203%20for%20arbitration+tag:arbitration-agreement"
-                },
-                {
-                    "value": "judgment-according-to-the-award",
-                    "formInput": "Section%203%20for%20arbitration+tag:judgment-according-to-the-award"
+                    "value": "transfer-of-property",
+                    "formInput": "Section%20151%20of%20CPC+tag:transfer-of-property"
                 }
             ]
         ],
@@ -49,44 +49,44 @@
             "Related Queries",
             [
                 {
-                    "value": "section 34 of the arbitration act",
-                    "formInput": "section%2034%20of%20the%20arbitration%20act"
+                    "value": "section 151 cpc",
+                    "formInput": "section%20151%20cpc"
                 },
                 {
-                    "value": "arbitral award",
-                    "formInput": "arbitral%20award"
+                    "value": "section 151 of civil procedure code",
+                    "formInput": "section%20151%20of%20civil%20procedure%20code"
                 },
                 {
-                    "value": "section 3 arbitration act  ",
-                    "formInput": "section%203%20arbitration%20act%20%20"
+                    "value": " cpc 151",
+                    "formInput": "%20cpc%20151"
                 },
                 {
-                    "value": "section 34(3) arbitration",
-                    "formInput": "section%2034%283%29%20arbitration"
+                    "value": "application under section 151 cpc",
+                    "formInput": "application%20under%20section%20151%20cpc"
                 },
                 {
-                    "value": "section 34(3) of the arbitration act",
-                    "formInput": "section%2034%283%29%20of%20the%20arbitration%20act"
+                    "value": "civil procedure section 151",
+                    "formInput": "civil%20procedure%20section%20151"
                 },
                 {
-                    "value": "arbitration and conciliation act, 1996",
-                    "formInput": "arbitration%20and%20conciliation%20act%2C%201996"
+                    "value": "temporary injunction",
+                    "formInput": "temporary%20injunction"
                 },
                 {
-                    "value": "arbitration, section 34",
-                    "formInput": "arbitration%2C%20section%2034"
+                    "value": "powers under section 151 cpc",
+                    "formInput": "powers%20under%20section%20151%20cpc"
                 },
                 {
-                    "value": "arbitral tribunal ",
-                    "formInput": "arbitral%20tribunal%20"
+                    "value": "fraud on court ",
+                    "formInput": "fraud%20on%20court%20"
                 },
                 {
-                    "value": "arbitration act",
-                    "formInput": "arbitration%20act"
+                    "value": "hindu marriage act",
+                    "formInput": "hindu%20marriage%20act"
                 },
                 {
-                    "value": "appointment of arbitrator/",
-                    "formInput": "appointment%20of%20arbitrator/"
+                    "value": "order 7 rule 11",
+                    "formInput": "order%207%20rule%2011"
                 }
             ]
         ],
@@ -95,24 +95,24 @@
             [
                 {
                     "value": "All",
-                    "formInput": "Section%203%20for%20arbitration",
+                    "formInput": "Section%20151%20of%20CPC",
                     "selected": true
                 },
                 {
                     "value": "Laws",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:laws"
+                    "formInput": "Section%20151%20of%20CPC+doctypes:laws"
                 },
                 {
                     "value": "Judgments",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:judgments"
+                    "formInput": "Section%20151%20of%20CPC+doctypes:judgments"
                 },
                 {
                     "value": "Tribunals",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:tribunals"
+                    "formInput": "Section%20151%20of%20CPC+doctypes:tribunals"
                 },
                 {
                     "value": "Highcourts & Supremecourt",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:supremecourt,scorders,highcourts"
+                    "formInput": "Section%20151%20of%20CPC+doctypes:supremecourt,scorders,highcourts"
                 }
             ]
         ],
@@ -120,53 +120,53 @@
             "Courts and Laws",
             [
                 {
-                    "value": "Supreme Court of India",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:supremecourt",
-                    "selected": false
-                },
-                {
-                    "value": "Delhi District Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:delhidc",
-                    "selected": false
-                },
-                {
                     "value": "Delhi High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:delhi",
-                    "selected": false
-                },
-                {
-                    "value": "Bombay High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:bombay",
-                    "selected": false
-                },
-                {
-                    "value": "Madras High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:chennai",
-                    "selected": false
-                },
-                {
-                    "value": "Union of India - Section",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:union-section",
-                    "selected": false
-                },
-                {
-                    "value": "Calcutta High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:kolkata",
-                    "selected": false
-                },
-                {
-                    "value": "Chattisgarh High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:chattisgarh",
-                    "selected": false
-                },
-                {
-                    "value": "Gujarat High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:gujarat",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:delhi",
                     "selected": false
                 },
                 {
                     "value": "Allahabad High Court",
-                    "formInput": "Section%203%20for%20arbitration+doctypes:allahabad",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:allahabad",
+                    "selected": false
+                },
+                {
+                    "value": "Andhra High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:andhra",
+                    "selected": false
+                },
+                {
+                    "value": "Supreme Court of India",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:supremecourt",
+                    "selected": false
+                },
+                {
+                    "value": "Karnataka High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:karnataka",
+                    "selected": false
+                },
+                {
+                    "value": "Punjab-Haryana High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:punjab",
+                    "selected": false
+                },
+                {
+                    "value": "Madras High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:chennai",
+                    "selected": false
+                },
+                {
+                    "value": "Andhra Pradesh High Court - Amravati",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:amravati",
+                    "selected": false
+                },
+                {
+                    "value": "Gauhati High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:gauhati",
+                    "selected": false
+                },
+                {
+                    "value": "Jammu & Kashmir High Court",
+                    "formInput": "Section%20151%20of%20CPC+doctypes:jammu",
                     "selected": false
                 }
             ]
@@ -175,24 +175,24 @@
             "Authors",
             [
                 {
-                    "value": "Ramesh Deokinandan Dhanuka",
-                    "formInput": "Section%203%20for%20arbitration+authorid:r-d-dhanuka"
+                    "value": "Balbir Singh Chauhan",
+                    "formInput": "Section%20151%20of%20CPC+authorid:b-s-chauhan"
                 },
                 {
-                    "value": "Arup Kumar Goswami",
-                    "formInput": "Section%203%20for%20arbitration+authorid:a-k-goswami"
+                    "value": "Anil Kumar",
+                    "formInput": "Section%20151%20of%20CPC+authorid:anil-kumar"
                 },
                 {
-                    "value": "R I Chagla",
-                    "formInput": "Section%203%20for%20arbitration+authorid:r-i-chagla"
+                    "value": "Manmohan Singh",
+                    "formInput": "Section%20151%20of%20CPC+authorid:m-singh"
                 },
                 {
-                    "value": "Rohinton Fali Nariman",
-                    "formInput": "Section%203%20for%20arbitration+authorid:r-f-nariman"
+                    "value": "B P Singh",
+                    "formInput": "Section%20151%20of%20CPC+authorid:b-p-singh"
                 },
                 {
-                    "value": "Abdul Quddhose",
-                    "formInput": "Section%203%20for%20arbitration+authorid:a-quddhose"
+                    "value": "Nuthalapati Venkata Ramana",
+                    "formInput": "Section%20151%20of%20CPC+authorid:n-v-ramana"
                 }
             ]
         ],
@@ -200,44 +200,44 @@
             "Bench",
             [
                 {
-                    "value": "Ramesh Deokinandan Dhanuka",
-                    "formInput": "Section%203%20for%20arbitration+benchid:r-d-dhanuka"
+                    "value": "B P Singh",
+                    "formInput": "Section%20151%20of%20CPC+benchid:b-p-singh"
                 },
                 {
-                    "value": "Nuthalapati Venkata Ramana",
-                    "formInput": "Section%203%20for%20arbitration+benchid:n-v-ramana"
+                    "value": "Balbir Singh Chauhan",
+                    "formInput": "Section%20151%20of%20CPC+benchid:b-s-chauhan"
                 },
                 {
                     "value": "Krishna Murari",
-                    "formInput": "Section%203%20for%20arbitration+benchid:k-murari"
+                    "formInput": "Section%20151%20of%20CPC+benchid:k-murari"
                 },
                 {
-                    "value": "Arup Kumar Goswami",
-                    "formInput": "Section%203%20for%20arbitration+benchid:a-k-goswami"
+                    "value": "Nuthalapati Venkata Ramana",
+                    "formInput": "Section%20151%20of%20CPC+benchid:n-v-ramana"
                 },
                 {
-                    "value": "R I Chagla",
-                    "formInput": "Section%203%20for%20arbitration+benchid:r-i-chagla"
+                    "value": "K N Saikia",
+                    "formInput": "Section%20151%20of%20CPC+benchid:k-n-saikia"
                 },
                 {
-                    "value": "Uday Umesh Lalit",
-                    "formInput": "Section%203%20for%20arbitration+benchid:u-u-lalit"
+                    "value": "Anil Kumar",
+                    "formInput": "Section%20151%20of%20CPC+benchid:anil-kumar"
                 },
                 {
-                    "value": "Rohinton Fali Nariman",
-                    "formInput": "Section%203%20for%20arbitration+benchid:r-f-nariman"
+                    "value": "Ramesh Madhav Bapat",
+                    "formInput": "Section%20151%20of%20CPC+benchid:r-m-bapat"
                 },
                 {
-                    "value": "Abdul Quddhose",
-                    "formInput": "Section%203%20for%20arbitration+benchid:a-quddhose"
+                    "value": "Manmohan Singh",
+                    "formInput": "Section%20151%20of%20CPC+benchid:m-singh"
                 },
                 {
-                    "value": "Syed Abdul Nazeer",
-                    "formInput": "Section%203%20for%20arbitration+benchid:s-a-nazeer"
+                    "value": "M Satyanarayana Murthy",
+                    "formInput": "Section%20151%20of%20CPC+benchid:m-s-murthy"
                 },
                 {
-                    "value": "Jitendra Kumar Maheshwari",
-                    "formInput": "Section%203%20for%20arbitration+benchid:j-k-maheshwari"
+                    "value": "Nitte Santosh Hegde",
+                    "formInput": "Section%20151%20of%20CPC+benchid:n-s-hegde"
                 }
             ]
         ],
@@ -245,285 +245,255 @@
             "Years",
             [
                 {
-                    "value": 2023,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2023+todate:31-12-2023"
+                    "value": 2014,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2014+todate:31-12-2014"
                 },
                 {
-                    "value": 2019,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2019+todate:31-12-2019"
-                },
-                {
-                    "value": 2020,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2020+todate:31-12-2020"
-                },
-                {
-                    "value": 2018,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2018+todate:31-12-2018"
-                },
-                {
-                    "value": 2024,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2024+todate:31-12-2024"
+                    "value": 2002,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2002+todate:31-12-2002"
                 },
                 {
                     "value": 2021,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2021+todate:31-12-2021"
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2021+todate:31-12-2021"
                 },
                 {
-                    "value": 1800,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-1800+todate:31-12-1800"
+                    "value": 2018,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2018+todate:31-12-2018"
                 },
                 {
-                    "value": 2016,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2016+todate:31-12-2016"
-                },
-                {
-                    "value": 2022,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-2022+todate:31-12-2022"
+                    "value": 2013,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2013+todate:31-12-2013"
                 },
                 {
                     "value": 1996,
-                    "formInput": "Section%203%20for%20arbitration+fromdate:1-1-1996+todate:31-12-1996"
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-1996+todate:31-12-1996"
+                },
+                {
+                    "value": 2007,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2007+todate:31-12-2007"
+                },
+                {
+                    "value": 1991,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-1991+todate:31-12-1991"
+                },
+                {
+                    "value": 2005,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-2005+todate:31-12-2005"
+                },
+                {
+                    "value": 1997,
+                    "formInput": "Section%20151%20of%20CPC+fromdate:1-1-1997+todate:31-12-1997"
                 }
             ]
         ]
     ],
     "docs": [
         {
-            "tid": 55662,
-            "catids": [
-                152,
-                135
-            ],
-            "doctype": 1017,
-            "publishdate": "1976-08-16",
-            "authorid": null,
-            "bench": null,
-            "title": "European Grain And Shipping, A Company vs Morvi Vegetable Products Ltd. on 16 August, 1976",
-            "numcites": 37,
-            "numcitedby": 0,
-            "headline": "relevant <b>Section</b> viz.  <b>Sections</b> 2  and  <b>3</b> . The Supreme Court also referred to the  <b>Arbitration</b> (Protocol and Convention) Act, 1937 , the <b>Arbitration</b> Clauses (Protocol ... clearly expressed in <b>sec</b> <b>3</b>, the majority Court quoted with approval a decision of Calcutta High Court under  <b>Section</b> <b>3</b>",
-            "docsize": 68451,
-            "fragment": true,
-            "docsource": "Gujarat High Court",
-            "citation": "(1979)1GLR159"
-        },
-        {
-            "tid": 158645836,
-            "catids": [
-                135,
-                377,
-                39
-            ],
-            "doctype": 1004,
-            "publishdate": "2016-08-02",
-            "authorid": 474,
-            "bench": [
-                474
-            ],
-            "title": "Logic Eastern India Pvt Ltd vs Kec International Ltd(Cables Sbu) on 2 August, 2016",
-            "numcites": 13,
-            "numcitedby": 0,
-            "headline": "terms of  <b>Section</b> 31(5)  of the <b>Arbitration</b> Act upon the petitioner, the\n    limitation for filing the <b>arbitration</b> petition under  <b>Section</b> 34(<b>3</b> ... also  <b>Section</b> 27  of the General Clauses Act,\n                                  \n    1897 and has held that  <b>Section</b> <b>3</b>(1)(b)  of the <b>Arbitration</b> Act makes it\n    clear that",
-            "docsize": 47705,
-            "fragment": true,
-            "docsource": "Bombay High Court",
-            "author": "R D Dhanuka",
-            "authorEncoded": "r-d-dhanuka"
-        },
-        {
-            "tid": 69084860,
+            "tid": 1362399,
             "catids": null,
-            "doctype": 1004,
-            "publishdate": "2024-04-01",
-            "authorid": 469,
+            "doctype": 1011,
+            "publishdate": "1986-04-29",
+            "authorid": null,
             "bench": [
-                469
+                2179,
+                2214,
+                2196
             ],
-            "title": "Health Care Medical And General Stores vs Amulya Investment on 1 April, 2024",
-            "numcites": 10,
-            "numcitedby": 0,
-            "headline": "<b>Arbitration</b>\n\nAgreement as provided in  <b>Section</b> 2(1)(h)  of the <b>Arbitration</b> Act.\n\nThis Court has also referred to  <b>Section</b> <b>3</b>  of the <b>Arbitration</b> ... making application under Sub-<b>Section</b> (<b>3</b>) of  <b>Section</b> 34  which is to\n\n be read with  <b>Section</b> 31(5)  of the <b>Arbitration</b> Act.                The Supreme\n\n Court",
-            "docsize": 38793,
+            "title": "Subho Ram Kalita (Deceased By L.R.S) And ... vs Dharmeswar Das Koch And Ors. on 29 April, 1986",
+            "numcites": 30,
+            "numcitedby": 13,
+            "headline": "<b>Code</b> of <b>Civil</b> <b>Procedure</b>  for dealing with the contingencies of two such suits being instituted, recourse to the inherent powers under  <b>Section</b> <b>151</b> ... provision of the <b>Code</b> of <b>Civil</b> <b>Procedure</b> or any other Act, such an order can be passed under <b>Section</b> <b>151</b>, ",
+            "docsize": 37833,
             "fragment": true,
-            "docsource": "Bombay High Court",
-            "author": "R I Chagla",
-            "authorEncoded": "r-i-chagla"
+            "docsource": "Gauhati High Court",
+            "citation": "AIR 1987 GAUHATI 73"
         },
         {
-            "tid": 1293440,
-            "catids": [
-                152,
-                55,
-                135,
-                531
-            ],
-            "doctype": 1000,
-            "publishdate": "2004-04-05",
-            "authorid": 1882,
+            "tid": 121164425,
+            "catids": null,
+            "doctype": 1008,
+            "publishdate": "2014-01-31",
+            "authorid": 30,
             "bench": [
-                2113,
-                1882
+                30
             ],
-            "title": "Milkfood Ltd vs M/S Gmc Ice Cream (P) Ltd on 5 April, 2004",
-            "numcites": 53,
-            "numcitedby": 144,
-            "headline": "laid on Rule <b>3</b> of the First \nSchedule of the 1940 Act in interpreting Sub-<b>Section</b> (<b>3</b>) of \n <b>Section</b> 37  of the Act.  (See  Motilal ... while pointing out the difference between  <b>Section</b> 27(<b>3</b>)  of \nthe 1939 Act and  <b>Section</b> 34(<b>3</b>)  of the 1980 Act on the one \nhand",
-            "docsize": 99661,
+            "title": "Satyendra Kumar Gupta vs Additional District Judge Court No.10 ... on 31 January, 2014",
+            "numcites": 38,
+            "numcitedby": 12,
+            "headline": "regard to a <b>procedure</b> or a remedy, if specifically provided in other provisions of the <b>Civil</b> <b>Procedure</b> <b>Code</b>. No <b>code</b> or law could be codified ... codified in the <b>Civil</b> <b>Procedure</b> <b>Code</b>, they could not be used for disturbing the <b>procedure</b> provided under the <b>Civil</b> <b>Procedure</b> <b>Code</b> because its ramification could",
+            "docsize": 50355,
             "fragment": true,
-            "docsource": "Supreme Court of India",
-            "author": "S B Sinha",
-            "authorEncoded": "s-b-sinha",
-            "citation": "AIR 2004 SUPREME COURT 3145"
+            "docsource": "Allahabad High Court",
+            "author": "A Kumar",
+            "authorEncoded": "anil-kumar"
         },
         {
-            "tid": 1924738,
+            "tid": 736506,
             "catids": [
-                135,
-                503,
                 152
             ],
-            "doctype": 1000,
-            "publishdate": "1984-08-16",
-            "authorid": 2158,
-            "bench": [
-                2158,
-                2099
-            ],
-            "title": "Renusagar Power Company Ltd vs General Electric Company And Anr on 16 August, 1984",
-            "numcites": 45,
-            "numcitedby": 183,
-            "headline": "petition  under  <b>section</b>  33  of the Indian <b>Arbitration</b> Act,\n1940 could  be stayed  on a  petition under <b>section</b> <b>3</b> of the\nForeign Awards ... should be refused;\n     (<b>3</b>) The  Court acting  under  <b>section</b>  <b>3</b>  (like the Court\nacting under <b>section</b> 33 of the Indian <b>Arbitration</b> Act) being\na  court",
-            "docsize": 247097,
+            "doctype": 1025,
+            "publishdate": "1991-07-31",
+            "authorid": null,
+            "bench": null,
+            "title": "The Indian Aluminium Cables Limited vs Rajasthan State Electricity Board And ... on 31 July, 1991",
+            "numcites": 18,
+            "numcitedby": 10,
+            "headline": "application Under  <b>Section</b> 41  of the Arbitration Act r/w Order 39 Rules 1 and 2  <b>CPC</b>  and  <b>Section</b> <b>151</b>   ... guarantee to the respondent No 1  <b>Section</b> 41(b)  of the Act provides that the <b>Civil</b> <b>Procedure</b> <b>Code</b> applies to all proceedings before the court",
+            "docsize": 27884,
             "fragment": true,
-            "docsource": "Supreme Court of India",
-            "author": "V D Tulzapurkar",
-            "authorEncoded": "v-d-tulzapurkar",
-            "citation": "1985 AIR 1156"
+            "docsource": "Rajasthan High Court",
+            "citation": "1992(1)WLC268"
         },
         {
-            "tid": 60243004,
-            "catids": [
-                327,
-                918
-            ],
-            "doctype": 1000,
-            "publishdate": "2018-12-10",
-            "authorid": 1105,
+            "tid": 1018202,
+            "catids": null,
+            "doctype": 1008,
+            "publishdate": "2005-12-13",
+            "authorid": 1423,
             "bench": [
-                1105,
-                1719
+                1423,
+                78
             ],
-            "title": "M/S Emaar Mgf Land Limited vs Aftab Singh on 10 December, 2018",
-            "numcites": 56,
-            "numcitedby": 140,
-            "headline": "<b>arbitration</b>, then, in spite of the non\n\nobstante provision in  <b>Section</b> 5  of the <b>Arbitration</b> Act,\n\nthe law will be saved by  <b>Section</b> 2(<b>3</b> ... purpose of\n       <b>Section</b> 34  of the <b>Arbitration</b> Act, in view of\n      the object of the Act and by operation of\n       <b>Section</b> <b>3</b>  thereof",
-            "docsize": 109041,
+            "title": "Satya Prakash Tiwari Alias Kallu And ... vs <b>Civil</b> Judge (Junior Division) And Ors. on 13 December, 2005",
+            "numcites": 24,
+            "numcitedby": 9,
+            "headline": "violation of the order of the <b>civil</b> court. The petitioners therefore filed another application under  <b>Section</b> <b>151</b> , C.P.C. which is still pending consideration ... Even if the <b>civil</b> court passed the effective order on the application filed by the petitioners under <b>Section</b> <b>151</b>, C.P.C., there",
+            "docsize": 18575,
             "fragment": true,
-            "docsource": "Supreme Court of India",
-            "author": "A Bhushan",
-            "authorEncoded": "a-bhushan",
-            "citation": "AIRONLINE 2018 SC 828"
+            "docsource": "Allahabad High Court",
+            "author": "B S Chauhan",
+            "authorEncoded": "b-s-chauhan",
+            "citation": "2006(1)AWC367"
         },
         {
-            "tid": 197941333,
+            "tid": 1284716,
             "catids": [
-                55,
-                39,
-                152,
-                531
-            ],
-            "doctype": 1000,
-            "publishdate": "2021-03-19",
-            "authorid": 1730,
-            "bench": [
-                1126,
-                1737,
-                1730
-            ],
-            "title": "Government Of Maharashtra, (Water ... vs M/S Borse Brothers Engineers And ... on 19 March, 2021",
-            "numcites": 124,
-            "numcitedby": 36,
-            "headline": "period of limitation contemplated under\n\n   <b>section</b> 34(<b>3</b>)  for an appeal filed under  <b>section</b> 37  of the <b>Arbitration</b> Act,\n\n  would amount to judicial legislation ... would show that other <b>sections</b> of the\n\n   Limitation Act  were excluded in the context of  <b>section</b> 34(<b>3</b>)  of the\n\n  <b>Arbitration</b> Act \u2013 such as  <b>sections</b>",
-            "docsize": 171459,
-            "fragment": true,
-            "docsource": "Supreme Court of India",
-            "author": "R F Nariman",
-            "authorEncoded": "r-f-nariman",
-            "citation": "AIRONLINE 2021 SC 152"
-        },
-        {
-            "tid": 78592269,
-            "catids": [
-                49
-            ],
-            "doctype": 1000,
-            "publishdate": "2022-10-31",
-            "authorid": 805,
-            "bench": [
-                1719,
-                702,
-                805
-            ],
-            "title": "Gujarat State Civil Supplies ... vs Mahakali Foods Pvt. Ltd. (Unit 2) on 31 October, 2022",
-            "numcites": 56,
-            "numcitedby": 40,
-            "headline": "<b>Section</b> 7 .\n\n                                          16 \n\f <b>Section</b> 2(4)  reads as under:\n \n         \u201c(4) This Part except sub-<b>section</b> (1) of <b>section</b>\n 40, <b>sections</b> 41 and 43 shall apply ... <b>Section</b> 7  reads as under:\n \n \u201c7. <b>Arbitration</b> agreement. \u2014\n\n   (1) In this Part, \u201c<b>arbitration</b> agreement\u201d means an\n   agreement by the parties to submit to <b>arbitration</b>",
-            "docsize": 121136,
-            "fragment": true,
-            "docsource": "Supreme Court of India",
-            "author": "B M Trivedi",
-            "authorEncoded": "b-m-trivedi"
-        },
-        {
-            "tid": 126925376,
-            "catids": [
-                929,
-                934,
-                926,
-                930,
-                49
+                20
             ],
             "doctype": 1002,
-            "publishdate": "2017-09-18",
-            "authorid": 728,
-            "bench": [
-                728
-            ],
-            "title": "Bharat Heavy Electricals Limited vs The Micro And Small Enterprises ... on 18 September, 2017",
-            "numcites": 27,
-            "numcitedby": 29,
-            "headline": "referred to <b>arbitration</b> contrary to the\n<b>arbitration</b> agreement entered into between them. He submitted that\n <b>Section</b> 18(<b>3</b>)  of the Act only provided ... between the <b>arbitration</b>\nagreement and  <b>section</b> 18(<b>3</b>)  of the Act;  <b>Section</b> 18(<b>3</b>)  contemplates only\nan institutional <b>arbitration</b> and not an ad hoc <b>arbitration</b>",
-            "docsize": 38855,
+            "publishdate": "1976-08-13",
+            "authorid": null,
+            "bench": null,
+            "title": "Santosh Chopra vs Teja Singh Sardul Singh on 13 August, 1976",
+            "numcites": 7,
+            "numcitedby": 10,
+            "headline": "under  <b>Section</b> <b>151</b>  of the <b>Code</b> of <b>Civil</b> <b>Procedure</b> praying that the respondents&#x27; application under Order 9 Rule 13 <b>Civil</b> <b>Procedure</b> <b>Code</b> be dismissed ... case under  <b>section</b> 146  <b>Cpc</b> and not under Order 9 Rule 13 <b>Civil</b> <b>Procedure</b> <b>Code</b> .  <b>Section</b> 146  <b>Civil</b> <b>Procedure</b> <b>Code</b> speaks of claiming",
+            "docsize": 18599,
             "fragment": true,
             "docsource": "Delhi High Court",
-            "author": "V Bakhru",
-            "authorEncoded": "v-bakhru"
+            "citation": "AIR1977DELHI110"
         },
         {
-            "tid": 1261112,
-            "catids": [
-                39,
-                531
-            ],
-            "doctype": 1004,
-            "publishdate": "2006-04-05",
-            "authorid": 498,
+            "tid": 96352,
+            "catids": null,
+            "doctype": 1002,
+            "publishdate": "1997-10-01",
+            "authorid": 906,
             "bench": [
-                490,
-                498
+                906
             ],
-            "title": "Chowgule Brothers And Ors. vs Rashtriya Chemicals And Fertilizers ... on 5 April, 2006",
-            "numcites": 27,
-            "numcitedby": 10,
-            "headline": "Rashtriya Chemicals And Fertilizers ... on 5 April, 2006 \n\n Equivalent citations: 2006(<b>3</b>)ARBLR457(BOM), 2006(4)BOMCR78 \n\n Author:  S.J. Vazifdar  \n\n Bench:  S. Radhakrishnan ... Petition under  <b>Section</b> 30  of the <b>Arbitration</b> Act, 1940 setting aside the majority award made by Respondent Nos.2 and <b>3</b>. \n  \n\n 2. Respondent",
-            "docsize": 65547,
+            "title": "Erum Travels vs Kanwar Rani on 1 October, 1997",
+            "numcites": 5,
+            "numcitedby": 11,
+            "headline": "that in a given case a <b>Civil</b> Court may think of ordering under  <b>Section</b> <b>151</b> , <b>Civil</b> <b>Procedure</b> <b>Code</b> in the way the Trial Court ... struck off. Here also the argument raised was that  <b>Section</b> <b>151</b> , <b>Civil</b> <b>Procedure</b> <b>Code</b> could not be invoked to strikeout the defense in circumstances covered",
+            "docsize": 23652,
             "fragment": true,
-            "docsource": "Bombay High Court",
-            "author": "S J Vazifdar",
-            "authorEncoded": "s-j-vazifdar",
-            "citation": "2006(3)ARBLR457(BOM)"
+            "docsource": "Delhi High Court",
+            "author": "M Sarin",
+            "authorEncoded": "m-sarin",
+            "citation": "1998IAD(DELHI)270"
+        },
+        {
+            "tid": 47711364,
+            "catids": [
+                1
+            ],
+            "doctype": 1009,
+            "publishdate": "2013-01-04",
+            "authorid": 349,
+            "bench": [
+                349
+            ],
+            "title": "B. Chandra Sekhar Reddy And Others vs K. Naga Raju Yadav And Another on 4 January, 2013",
+            "numcites": 28,
+            "numcitedby": 4,
+            "headline": "<b>Civil</b> <b>Procedure</b>\n<b>Code</b>, 1908 ( <b>CPC</b> ) provided granting of police aid without resorting to the\nprovisions of  <b>Section</b> 94  <b>CPC</b> or  Order ... obstructed, die Court\nshould not exercise its inherent power under <b>Section</b> <b>151</b>, <b>Civil</b> <b>Procedure</b> <b>Code</b>\nand direct the police authorities to render",
+            "docsize": 54835,
+            "fragment": true,
+            "docsource": "Andhra High Court",
+            "author": "G K Reddy",
+            "authorEncoded": "g-k-reddy",
+            "citation": "2013 AIR CC 1956 (AP)"
+        },
+        {
+            "tid": 1498780,
+            "catids": [
+                20,
+                130
+            ],
+            "doctype": 1008,
+            "publishdate": "1996-05-27",
+            "authorid": null,
+            "bench": null,
+            "title": "Smt. Garima Singh vs Sri Sanjai Singh And Ors. on 27 May, 1996",
+            "numcites": 44,
+            "numcitedby": 3,
+            "headline": "which an application moved by her under  <b>Section</b> <b>151</b>  of the <b>Code</b> of <b>Civil</b> <b>Procedure</b> for setting aside the ex parte decree of divorce dated ... <b>Section</b> <b>151</b>  of <b>Code</b> of <b>Civil</b> <b>Procedure</b>. He also referred to the provisions of  Order 1 Rule 10 of the <b>Code</b> of <b>Civil</b> <b>Procedure</b>",
+            "docsize": 84184,
+            "fragment": true,
+            "docsource": "Allahabad High Court",
+            "citation": "II(1996)DMC422"
+        },
+        {
+            "tid": 1198203,
+            "catids": [
+                1091,
+                2018
+            ],
+            "doctype": 1009,
+            "publishdate": "2001-11-22",
+            "authorid": 1882,
+            "bench": [
+                1882,
+                383,
+                675
+            ],
+            "title": "P. Srinivasa Rao vs P. Indira And Anr. on 22 November, 2001",
+            "numcites": 55,
+            "numcitedby": 4,
+            "headline": "<b>Code</b>, an application for interim relief can be entertained by the Court in terms of  <b>Section</b> <b>151</b>  of <b>Code</b> of <b>Civil</b> <b>Procedure</b>. The said decision ... <b>Section</b> <b>151</b> cannot extend to matters other than <b>procedural</b>. It was opined:   \n    The <b>Code</b> itself is intended to regulate the <b>procedure</b> of Courts. <b>Section</b> <b>151</b>",
+            "docsize": 72749,
+            "fragment": true,
+            "docsource": "Andhra High Court",
+            "author": "S B Sinha",
+            "authorEncoded": "s-b-sinha",
+            "citation": "2002(1)ALD296"
+        },
+        {
+            "tid": 853336,
+            "catids": [
+                972,
+                914
+            ],
+            "doctype": 1009,
+            "publishdate": "2002-11-01",
+            "authorid": 383,
+            "bench": [
+                383
+            ],
+            "title": "Nicholas Piramal India Limited vs Cultor Food Science Inc. And Ors. on 1 November, 2002",
+            "numcites": 31,
+            "numcitedby": 5,
+            "headline": "cases where injunction is sought under  <b>Section</b> <b>151</b>  <b>CPC</b> and since injunction sought by the 1st respondent is not covered by Rules ... under  <b>Section</b> <b>151</b>  <b>CPC</b> but filed that petition under  Order 39 Rule 1 <b>CPC</b>  only even without quoting  <b>Section</b> <b>151</b>  <b>CPC</b>",
+            "docsize": 34598,
+            "fragment": true,
+            "docsource": "Andhra High Court",
+            "author": "R M Bapat",
+            "authorEncoded": "r-m-bapat",
+            "citation": "AIR2003AP254"
         }
     ],
-    "found": "11 - 20 of 101563",
-    "encodedformInput": "Section%203%20for%20arbitration"
+    "found": "11 - 20 of 31919",
+    "encodedformInput": "Section%20151%20of%20CPC"
 }

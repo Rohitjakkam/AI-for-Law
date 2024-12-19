@@ -80,7 +80,7 @@ def fetch_indian_kanoon_info(query):
 def translate_to_hindi(text):
     logging.info("Translating text to Hindi...")
     try:
-        translation_prompt = f"Translate the following text into Hindi:\n{text}"
+        translation_prompt = f"Summarize and Translate the following text into Hindi:\n{text}"
         messages = [
             {"role": "system", "content": "You are a professional translator in hindi language."},
             {"role": "user", "content": translation_prompt},
